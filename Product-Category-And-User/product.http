@@ -1,0 +1,33 @@
+
+POST  http://localhost:4000/products
+#-----ADDS A NEW product TO OUR DATABASE
+Content-Type: application/json
+
+{
+    "Name":" Will I Be Deleted",
+    "CategoryId":"229de757-861d-4cd5-bff8-b90f8aa7a58c"
+}
+
+#######
+#---GETS ALL PRODUCTS FROM DB
+GET http://localhost:4000/products
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiI1ZjY0MWJmYy0yYzYzLTQ1ZmYtOWRhYi1hZGFiOWRhOTdhNzEiLCJVc2VyTmFtZSI6IkRlbGV0ZSBNZSIsImlhdCI6MTcxODgwMzA0MiwiZXhwIjoxNzE4ODEwMjQyfQ.b-BiDfxoCLXT1kGJXhB8zZ3BWHHBJW3sXF8jkHEC6HA
+
+
+
+#######
+GET http://localhost:4000/products/ca26952e-72a0-402c-8aa9-866310f5d4ee
+#---GETS A PRODUCT WITH THE SPECIFIED ID
+
+#############
+PATCH   http://localhost:4000/products/48724755-2013-416c-bdf7-cef4213ee548
+#-----ADDS A NEW product TO OUR DATABASE
+Content-Type: application/json
+
+{
+    "Name":"Erasable Crayons",
+    "CategoryId":"229de757-861d-4cd5-bff8-b90f8aa7a58c"
+}
+
+#######
+DELETE  http://localhost:4000/products/ca26952e-72a0-402c-8aa9-866310f5d4ee
